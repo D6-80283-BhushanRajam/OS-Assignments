@@ -1,0 +1,489 @@
+Assignment No. 01
+
+1. man cal
+CAL(1)                    BSD General Commands Manual                   CAL(1)
+
+NAME
+     cal, ncal — displays a calendar and the date of Easter
+
+SYNOPSIS
+     cal [-3hjy] [-A number] [-B number] [[month] year]
+     cal [-3hj] [-A number] [-B number] -m month [year]
+     ncal [-3bhjJpwySM] [-A number] [-B number] [-W number] [-s country_code]
+         [[month] year]
+     ncal [-Jeo] [-A number] [-B number] [year]
+     ncal [-CN] [-H yyyy-mm-dd] [-d yyyy-mm]
+
+DESCRIPTION
+     The cal utility displays a simple calendar in traditional format and ncal
+     offers an alternative layout, more options and the date of Easter.  The
+     new format is a little cramped but it makes a year fit on a 25x80 termi‐
+     nal.  If arguments are not specified, the current month is displayed.
+
+     The options are as follows:
+
+     -h      Turns off highlighting of today.
+
+     -J      Display Julian Calendar, if combined with the -o option, display
+             date of Orthodox Easter according to the Julian Calendar.
+
+     -e      Display date of Easter (for western churches).
+
+     -j      Display Julian days (days one-based, numbered from January 1).
+
+     -m month
+             Display the specified month.  If month is specified as a decimal
+             number, appending ‘f’ or ‘p’ displays the same month of the fol‐
+             lowing or previous year respectively.
+
+     -o      Display date of Orthodox Easter (Greek and Russian Orthodox
+             Churches).
+
+     -p      Print the country codes and switching days from Julian to Grego‐
+             rian Calendar as they are assumed by ncal.  The country code as
+             determined from the local environment is marked with an asterisk.
+ Manual page cal(1) line 1/145 32% (press h for help or q to quit)
+
+     -s country_code
+             Assume the switch from Julian to Gregorian Calendar at the date
+             associated with the country_code.  If not specified, ncal tries
+             to guess the switch date from the local environment or falls back
+             to September 2, 1752.  This was when Great Britain and her
+             colonies switched to the Gregorian Calendar.
+
+     -w      Print the number of the week below each week column.
+
+     -y      Display a calendar for the specified year. This option is implied
+             when a year but no month are specified on the command line.
+
+     -3      Display the previous, current and next month surrounding today.
+
+     -1      Display only the current month. This is the default.
+
+     -A number
+             Months to add after. The specified number of months is added to
+             the end of the display. This is in addition to any date range se‐
+             lected by the -y, -3, or -1 options. For example, “cal -y -B2
+             -A2” shows everything from November of the previous year to Feb‐
+             ruary of the following year. Negative numbers are allowed, in
+             which case the specified number of months is subtracted. For ex‐
+             ample, “cal -y -B-6” shows July to December. And “cal -A11” sim‐
+             ply shows the next 12 months.
+
+     -B number
+             Months to add before. The specified number of months is added to
+             the beginning of the display. See -A for examples.
+
+     -C      Completely switch to cal mode. For cal like output only, use -b
+             instead.
+
+     -d yyyy-mm
+             Use yyyy-mm as the current date (for debugging of date selec‐
+             tion).
+     -H yyyy-mm-dd
+             Use yyyy-mm-dd as the current date (for debugging of highlight‐
+             ing).
+
+     -M      Weeks start on Monday.
+
+     -S      Weeks start on Sunday.
+
+     -W number
+             First week of the year has at least number days.
+
+     -b      Use oldstyle format for ncal output.
+
+     A single parameter specifies the year (1–9999) to be displayed; note the
+     year must be fully specified: “cal 89” will not display a calendar for
+     1989.  Two parameters denote the month and year; the month is either a
+     number between 1 and 12, or a full or abbreviated name as specified by
+     the current locale.  Month and year default to those of the current sys‐
+     tem clock and time zone (so “cal -m 8” will display a calendar for the
+     month of August in the current year).
+
+     Not all options can be used together.  For example the options -y, -3,
+     and -1 are mutually exclusive. If inconsistent options are given, the
+     later ones take precedence over the earlier ones.
+
+     A year starts on January 1.
+
+     Highlighting of dates is disabled if stdout is not a tty.
+
+SEE ALSO
+     calendar(3), strftime(3)
+
+STANDARDS
+     The cal utility is compliant with the X/Open System Interfaces option of
+     the IEEE Std 1003.1-2008 (“POSIX.1”) specification.
+
+     The flags [-3hyJeopw], as well as the ability to specify a month name as
+     a single argument, are extensions to that specification.
+
+     The week number computed by -w is compliant with the ISO 8601 specifica‐
+     tion.
+HISTORY
+     A cal command appeared in Version 1 AT&T UNIX.  The ncal command appeared
+     in FreeBSD 2.2.6.  The output of the cal command is supposed to be bit
+     for bit compatible to the original Unix cal command, because its output
+     is processed by other programs like CGI scripts, that should not be bro‐
+     ken. Therefore it will always output 8 lines, even if only 7 contain
+     data. This extra blank line also appears with the original cal command,
+     at least on Solaris 8
+
+AUTHORS
+     The ncal command and manual were written by Wolfgang Helbig
+     <helbig@FreeBSD.org>.
+
+BUGS
+     The assignment of Julian–Gregorian switching dates to country codes is
+     historically naive for many countries.
+
+     Not all options are compatible and using them in different orders will
+     give varying results.
+
+     It is not possible to display Monday as the first day of the week with
+     cal.
+
+BSD                              March 7, 2019                             BSD
+ Manual page cal(1) line 105/145 (END) (press h for help or q to quit)
+
+2. uname 
+bhushan@bhushan-Nitro-AN515-54:~$ uname
+Linux
+bhushan@bhushan-Nitro-AN515-54:~$ 
+
+3. pwd
+bhushan@bhushan-Nitro-AN515-54:~$ pwd
+/home/bhushan
+bhushan@bhushan-Nitro-AN515-54:~$ 
+
+4. hostname
+bhushan@bhushan-Nitro-AN515-54:~$ hostname
+bhushan-Nitro-AN515-54
+bhushan@bhushan-Nitro-AN515-54:~$ 
+
+5. date
+bhushan@bhushan-Nitro-AN515-54:~$ date
+Monday 27 November 2023 05:09:30 PM IST
+bhushan@bhushan-Nitro-AN515-54:~$ 
+
+6. cal
+bhushan@bhushan-Nitro-AN515-54:~$ cal
+   November 2023      
+Su Mo Tu We Th Fr Sa  
+          1  2  3  4  
+ 5  6  7  8  9 10 11  
+12 13 14 15 16 17 18  
+19 20 21 22 23 24 25  
+26 27 28 29 30        
+                      
+bhushan@bhushan-Nitro-AN515-54:~$ 
+
+7. ls
+bhushan@bhushan-Nitro-AN515-54:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+bhushan@bhushan-Nitro-AN515-54:~$ 
+
+8. dir
+bhushan@bhushan-Nitro-AN515-54:~$ dir
+Desktop  Documents  Downloads  Music  Pictures	Public	snap  Templates  Videos
+bhushan@bhushan-Nitro-AN515-54:~$ 
+
+9. cat >
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice$ cat > demo1.txt
+Name :- Bhushan Ratnakar Rajam
+Course :- PG-DAC
+Institute :- Sunbeam, Punebhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice$ 
+
+10. cat 
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice$ cat demo1.txt
+Name :- Bhushan Ratnakar Rajam
+Course :- PG-DAC
+Institute :- Sunbeam, Punebhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice$ 
+
+11. cp
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice$ cp demo1.txt copy.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice$ ls
+copy.txt  demo1.txt
+
+12. cp 
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS$ cp -r Practice Practice1
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS$ cd Practice1
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice1$ ls
+Practice
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice1$ 
+
+13. mv
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS$ mv Practice/copy.txt Practice2
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS$ cd Practice2
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice2$ ls
+copy.txt
+
+14. mv 
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice$ mv demo1.txt Practice2 
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice$ ls
+copy.txt  Practice2
+
+15. tac
+beam PG-DAC/PG-DAC/OS/Practice1/Practice$ tac demo1.txt
+Institute :- Sunbeam, PuneCourse :- PG-DAC
+Name :- Bhushan Ratnakar Rajam
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice1/Practice$  
+
+16. rev
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice1/Practice$ rev demo1.txt
+majaR rakantaR nahsuhB -: emaN
+CAD-GP -: esruoC
+enuP ,maebnuS -: etutitsnIbhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice1/Practice$ 
+
+17. wc
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice1/Practice$ wc demo1.txt
+ 2 12 74 demo1.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice1/Practice$ 
+
+18. mkdir
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS$ mkdir Practice3
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS$ ls
+Assignments  osc  Practice  Practice1  Practice2  Practice3
+
+19. cd
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS$ cd Practice3
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice3$ 
+
+20. rm 
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice$ ls
+Practice2
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice$ rm Practice2
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice$ ls
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice$ 
+
+21. rm -r
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS$ ls
+Assignments  osc  Practice  Practice1  Practice2  Practice3
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS$ ls
+Assignments  osc  Practice  Practice2  Practice3
+
+22. rmdir
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS$ ls
+Assignments  osc  Practice  Practice2  Practice3
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS$ rmdir Practice
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS$ ls
+Assignments  osc  Practice2  Practice3
+
+23. touch
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice3$ ls
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice3$ touch demo3.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice3$ ls
+demo3.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice3$ 
+
+24. sort
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice2$ cat copy.txt
+Name :- Bhushan Ratnakar Rajam
+Course :- PG-DAC
+Institute :- Sunbeam, Punebhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice2$ sort copy.txt
+Course :- PG-DAC
+Institute :- Sunbeam, Pune
+Name :- Bhushan Ratnakar Rajam
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice2$ 
+
+25. uniq
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice2$ cat copy.txt
+Name :- Bhushan Ratnakar Rajam
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Institute :- Sunbeam, Pune
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice2$ uniq copy.txt
+Name :- Bhushan Ratnakar Rajam
+Course :- PG-DAC
+Institute :- Sunbeam, Pune
+
+26. head
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice2$ cat copy.txt
+Name :- Bhushan Ratnakar Rajam
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice2$ head copy.txt
+Name :- Bhushan Ratnakar Rajam
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+
+27. tail
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice2$ cat copy.txt
+Name :- Bhushan Ratnakar Rajam
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice2$ tail copy.txt
+Course :- PG-DAC
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+
+28. factor
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice2$ factor 500
+500: 2 2 5 5 5
+
+29. alias
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice2$ alias cd="cat copy.txt"
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice2$ cd
+Name :- Bhushan Ratnakar Rajam
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Course :- PG-DAC
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+Institute :- Sunbeam, Pune
+
+30. unalias
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice2$ unalias cd
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice2$ cd
+bhushan@bhushan-Nitro-AN515-54:~$ 
+
+31. echo
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice2$ echo "Bhushan Ratnakar Rajam"
+Bhushan Ratnakar Rajam
+
+32. ps
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice2$ ps
+    PID TTY          TIME CMD
+   6982 pts/0    00:00:00 bash
+   7314 pts/0    00:00:00 ps
+
+
+33. kill
+bhushan@bhushan-Nitro-AN515-54:~$ ps
+    PID TTY          TIME CMD
+   8750 pts/0    00:00:00 bash
+   8761 pts/0    00:00:00 ps
+bhushan@bhushan-Nitro-AN515-54:~$ kill -9 8750
+closes terminal
+
+34. env
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice2$ env
+SHELL=/bin/bash
+SESSION_MANAGER=local/bhushan-Nitro-AN515-54:@/tmp/.ICE-unix/2487,unix/bhushan-Nitro-AN515-54:/tmp/.ICE-unix/2487
+QT_ACCESSIBILITY=1
+COLORTERM=truecolor
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+SSH_AGENT_LAUNCHER=gnome-keyring
+XDG_MENU_PREFIX=gnome-
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GTK_IM_MODULE=ibus
+LANGUAGE=en_IN:en
+GNOME_SHELL_SESSION_MODE=ubuntu
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+XMODIFIERS=@im=ibus
+DESKTOP_SESSION=ubuntu
+GTK_MODULES=gail:atk-bridge
+DBUS_STARTER_BUS_TYPE=session
+PWD=/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Practice2
+LOGNAME=bhushan
+XDG_SESSION_DESKTOP=ubuntu
+XDG_SESSION_TYPE=x11
+GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+SYSTEMD_EXEC_PID=2487
+XAUTHORITY=/run/user/1000/gdm/Xauthority
+WINDOWPATH=2
+HOME=/home/bhushan
+USERNAME=bhushan
+LANG=en_IN
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+XDG_CURRENT_DESKTOP=ubuntu:GNOME
+VTE_VERSION=6800
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/8bd83424_0ad7_4ab1_8178_4ee34fad45f7
+LESSCLOSE=/usr/bin/lesspipe %s %s
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=bhushan
+GNOME_TERMINAL_SERVICE=:1.170
+DISPLAY=:1
+SHLVL=1
+QT_IM_MODULE=ibus
+DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=38d5c9b7b06d8b6103c62bce6564797f
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+GDMSESSION=ubuntu
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=38d5c9b7b06d8b6103c62bce6564797f
+_=/usr/bin/env
+OLDPWD=/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS
+
+
+
+
+
+
+
+
+
+
+
