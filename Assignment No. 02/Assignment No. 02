@@ -1,0 +1,171 @@
+Assigment No. 02
+
+Q1. 
+bhushan@bhushan-Nitro-AN515-54:~$ ls -t
+Downloads  Videos  snap  Desktop  Documents  Music  Pictures  Public  Templates
+bhushan@bhushan-Nitro-AN515-54:~$ 
+
+Q2.
+bhushan@bhushan-Nitro-AN515-54:~$ ls -S
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+bhushan@bhushan-Nitro-AN515-54:~$ 
+
+Q3.
+bhushan@bhushan-Nitro-AN515-54:~$ ls -i
+2752647 Desktop    2752653 Music     2752517 snap
+2752652 Documents  2752654 Pictures  2752650 Templates
+2752649 Downloads  2752651 Public    2752655 Videos
+bhushan@bhushan-Nitro-AN515-54:~$ 
+
+Q4.
+bhushan@bhushan-Nitro-AN515-54:~$ ls 
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+bhushan@bhushan-Nitro-AN515-54:~$ ls Desktop
+ 80283_Bhushan_DSAJava   80283_Bhushan_DSAJava.zip   Hackathon  'Lab Exams'
+bhushan@bhushan-Nitro-AN515-54:~$ 
+
+Q5.
+i.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02$ cat > demo.txt
+Name :- Bhushan
+Sirname :- Rajam
+ii.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02$ cat >> demo.txt
+Address :- Laxmi chauk, Hinjewadi phase 1, Pune.
+iii.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02$ cat demo.txt
+Name :-  Bhushan
+Sirname :- Rajam
+Address :- Laxmi chauk, Hinjewadi phase 1, Pune.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02$ 
+
+Q6.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02$ touch demo1.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02$ stat demo1.txt
+  File: demo1.txt
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 801h/2049d	Inode: 121835      Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/ bhushan)   Gid: ( 1000/ bhushan)
+Access: 2023-11-28 17:16:32.315473200 +0530
+Modify: 2023-11-28 17:16:32.315473200 +0530
+Change: 2023-11-28 17:16:32.315473200 +0530
+ Birth: -
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02$ touch -t 202012212000  demo1.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02$ stat demo1.txt
+  File: demo1.txt
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 801h/2049d	Inode: 121835      Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/ bhushan)   Gid: ( 1000/ bhushan)
+Access: 2020-12-21 20:00:00.000000000 +0530
+Modify: 2020-12-21 20:00:00.000000000 +0530
+Change: 2023-11-28 17:16:55.801228700 +0530
+ Birth: -
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02$ 
+
+Q7.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02$ mkdir one
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02$ cd one
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02/one$ touch 1.txt 11.txt 111.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02/one$ mkdir two
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02/one$ cd two
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02/one/two$ touch 2.txt 22.txt 222.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02/one/two$ mkdir three
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02/one/two$ cd three
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02/one/two/three$ touch 3.txt 33.txt 333.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02/one/two/three$ mkdir four
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02/one/two/three$ cd four
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02/one/two/three/four$ touch 4.txt 44.txt 444.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02/one/two/three/four$ mkdir five
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02/one/two/three/four$ cd five
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02/one/two/three/four/five$ touch 5.txt 55.txt 555.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02/one/two/three/four/five$ cd ~
+bhushan@bhushan-Nitro-AN515-54:~$ 
+
+Q.8
+ i.
+bhushan@bhushan-Nitro-AN515-54:~$ ls /media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one/two/three/four/five
+555.txt  55.txt  5.txt
+bhushan@bhushan-Nitro-AN515-54:~$ 
+
+ ii.
+bhushan@bhushan-Nitro-AN515-54:~$ cat > /media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one/two/three/four/44.txt
+Name :- Bhushan Ratnakar Rajambhushan@bhushan-Nitro-AN515-54:~$ 
+
+ iii
+bhushan@bhushan-Nitro-AN515-54:~$ rm /media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one/two/three/four/five/555.txt
+bhushan@bhushan-Nitro-AN515-54:~$ ls /media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one/two/three/four/five/
+55.txt  5.txt
+bhushan@bhushan-Nitro-AN515-54:~$ 
+
+ iv
+bhushan@bhushan-Nitro-AN515-54:~$ cd /media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one/two/three/four/five
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one/two/three/four/five$ 
+
+ v
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one/two/three/four/five$ cat > ..3.txt
+Course Name :- PG-DAC
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one/two/three/four/five$ cat ..3.txt
+Course Name :- PG-DAC
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one/two/three/four/five$ 
+
+ vi
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one/two/three/four/five$ ls ../../..
+222.txt  22.txt  2.txt  three
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one/two/three/four/five$ 
+
+ vii
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one/two/three/four/five$ rm ../../../222.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one/two/three/four/five$ ls ../../..
+22.txt  2.txt  three
+
+ viii
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one/two/three/four/five$ cd ../../../..
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one$ 
+
+ ix
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one$ ls two/three/four/five
+55.txt  5.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one$ rm two/three/four/five/*
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one$ ls two/three/four/five
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one$ 
+
+ x.
+bhushan@bhushan-Nitro-AN515-54:~$ ls /media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one/two/three/four/
+444.txt  44.txt  4.txt  five
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one$ rm -R two/three/four/five
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one$ ls two/three/four
+444.txt  44.txt  4.txt
+
+ xi.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one/two/three/four/five$ ls ../..
+333.txt  33.txt  3.txt  four
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one$ rm -R two/three/four/
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one$ ls two/three
+333.txt  33.txt  3.txt
+
+ xii.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment_No._02/one$ cd ~
+bhushan@bhushan-Nitro-AN515-54:~$ 
+
+9. 
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02/one/two/three$ stat 3.txt
+  File: 3.txt
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 801h/2049d	Inode: 121854      Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/ bhushan)   Gid: ( 1000/ bhushan)
+Access: 2023-11-28 17:19:19.249524800 +0530
+Modify: 2023-11-28 17:19:19.249524800 +0530
+Change: 2023-11-28 17:19:19.249524800 +0530
+ Birth: -
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02/one/two/three$ touch -t 202012212000 3.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02/one/two/three$ stat 3.txt
+  File: 3.txt
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 801h/2049d	Inode: 121854      Links: 1
+Access: (0777/-rwxrwxrwx)  Uid: ( 1000/ bhushan)   Gid: ( 1000/ bhushan)
+Access: 2020-12-21 20:00:00.000000000 +0530
+Modify: 2020-12-21 20:00:00.000000000 +0530
+Change: 2023-11-28 18:46:46.045557800 +0530
+ Birth: -
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments/Assignment No. 02/one/two/three$ 
+
