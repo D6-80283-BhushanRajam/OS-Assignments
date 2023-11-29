@@ -1,0 +1,318 @@
+Assignment No. 03
+
+1.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments$ ls
+'Assignment No. 01'  'Assignment No. 02'  'Assignment No. 03'
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments$ ls -a
+ .   ..  'Assignment No. 01'  'Assignment No. 02'  'Assignment No. 03'   .git
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/OS-Assignments$
+
+2.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ ls
+demo1.txt  demo.txt  one  OS-Assignments
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ for file in *.txt; do
+    mv -- "$file" "${file%.txt}.htm"
+done
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ ls
+demo1.htm  demo.htm  one  OS-Assignments
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ 
+
+3.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/one$ ls
+111.txt  11.txt  1.txt  two
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/one$ ln -s 111.txt link_file.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/one$ ls
+111.txt  11.txt  1.txt  link_file.txt  two
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/one$ 
+
+4.
+
+5.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/one$ stat 1.txt
+  File: 1.txt
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 801h/2049d	Inode: 121842      Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/ bhushan)   Gid: ( 1000/ bhushan)
+Access: 2023-11-28 17:18:18.153178600 +0530
+Modify: 2023-11-28 17:18:18.153178600 +0530
+Change: 2023-11-28 17:18:18.153178600 +0530
+ Birth: 2023-11-28 17:18:18.152756600 +0530
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/one$ 
+
+6.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/one$ stat 1.txt
+  File: 1.txt
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 801h/2049d	Inode: 121842      Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/ bhushan)   Gid: ( 1000/ bhushan)
+Access: 2023-11-28 17:18:18.153178600 +0530
+Modify: 2023-11-28 17:18:18.153178600 +0530
+Change: 2023-11-28 17:18:18.153178600 +0530
+ Birth: 2023-11-28 17:18:18.152756600 +0530
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/one$ touch -t 202012212000 1.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/one$ stat 1.txt
+  File: 1.txt
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 801h/2049d	Inode: 121842      Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/ bhushan)   Gid: ( 1000/ bhushan)
+Access: 2020-12-21 20:00:00.000000000 +0530
+Modify: 2020-12-21 20:00:00.000000000 +0530
+Change: 2023-11-29 17:05:18.254796500 +0530
+ Birth: 2023-11-28 17:18:18.152756600 +0530
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments/one$ 
+
+7.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ ls
+OS-Assignments
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ touch demo1.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ ls
+demo1.txt  OS-Assignments
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ 
+
+8.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ cat demo1.txt
+hi
+,
+my
+name 
+is
+bhushan
+ratnakr
+rajam
+currently 
+i
+am 
+living 
+in 
+pune 
+and 
+doping 
+my pg 
+diploma
+in 
+Advance
+computing
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ tail -n +5 demo1.txt
+is
+bhushan
+ratnakr
+rajam
+currently 
+i
+am 
+living 
+in 
+pune 
+and 
+doping 
+my pg 
+diploma
+in 
+Advance
+computing
+
+9. init 0, poweroffShutdown (Only for super-user)
+
+10. init 6, rebootReboot (Only for super-user)
+
+11. 
+bhushan@bhushan-Nitro-AN515-54:~$ whoami
+bhushan
+bhushan@bhushan-Nitro-AN515-54:~$ 
+
+12.
+bhushan@bhushan-Nitro-AN515-54:~$ tty
+/dev/pts/0
+bhushan@bhushan-Nitro-AN515-54:~$ 
+
+13.
+
+14.
+bhushan@bhushan-Nitro-AN515-54:~$ users
+bhushan
+
+15.
+bhushan@bhushan-Nitro-AN515-54:~$ who
+bhushan  :1           2023-11-29 16:13 (:1)
+
+16.
+
+17.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ ls -l
+total 8
+-rw-rw-r-- 1 bhushan bhushan  124 Nov 29 17:16 demo1.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ chmod 444 demo1.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ ls -l
+total 8
+-r--r--r-- 1 bhushan bhushan  124 Nov 29 17:16 demo1.txt
+
+18.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ ls -l
+total 8
+-r--r--r-- 1 bhushan bhushan  124 Nov 29 17:16 demo1.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ chmod 777 demo1.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ ls -l
+total 8
+-rwxrwxrwx 1 bhushan bhushan  124 Nov 29 17:16 demo1.txt
+
+19.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ wc < demo1.txt > wc.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ cat wc.txt
+ 21  22 124
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ 
+
+20
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ who | wc demo1.txt
+ 21  22 124 demo1.txt
+
+21
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ cat demo1.txt
+hi
+,
+my
+name 
+is
+bhushan
+ratnakr
+rajam
+currently 
+i
+am 
+living 
+in 
+pune 
+and 
+doping 
+my pg 
+diploma
+in 
+Advance
+computing
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ tail -n +5 demo1.txt | head -n +5
+is
+bhushan
+ratnakr
+rajam
+currently 
+
+22
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ cat demo1.txt
+hi
+,
+my
+name 
+is
+living 
+bhushan
+ratnakr
+living 
+rajam
+currently 
+i
+am 
+living 
+in 
+pune 
+name
+and 
+living 
+living 
+doping 
+name
+living 
+my pg 
+diploma
+name
+in 
+Advance
+computing
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ sort demo1.txt | uniq
+,
+Advance
+am 
+and 
+bhushan
+computing
+currently 
+diploma
+doping 
+hi
+i
+in 
+is
+living 
+my
+my pg 
+name
+name 
+pune 
+rajam
+ratnakr
+
+23
+
+24
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ ls
+demo1.txt  OS-Assignments  wc.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ ls -S
+OS-Assignments  demo1.txt  wc.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ 
+
+25
+
+26
+
+27
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ cat demo1.txt | tr "a-z" "A-Z"
+HI
+,
+MY
+NAME 
+IS
+LIVING 
+BHUSHAN
+RATNAKR
+LIVING 
+RAJAM
+CURRENTLY 
+I
+AM 
+LIVING 
+IN 
+PUNE 
+NAME
+AND 
+LIVING 
+LIVING 
+DOPING 
+NAME
+LIVING 
+MY PG 
+DIPLOMA
+NAME
+IN 
+ADVANCE
+COMPUTING
+
+28.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ cat demo1.txt
+hi,mynameisliving bhushanratnakrliving rajamcurrently 
+i amliving inpune nameandliving 
+livingdoping 
+namelivingmypg diplomanamein 
+Advancecomputing
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ cut -d ' ' -f 2 demo1.txt
+bhushanratnakrliving
+amliving
+
+diplomanamein
+Advancecomputing
+
+
+
+
+
+
+
+
+
