@@ -126,6 +126,8 @@ bhushan@bhushan-Nitro-AN515-54:~$ tty
 bhushan@bhushan-Nitro-AN515-54:~$ 
 
 13.
+Not working on my system
+
 
 14.
 bhushan@bhushan-Nitro-AN515-54:~$ users
@@ -136,6 +138,7 @@ bhushan@bhushan-Nitro-AN515-54:~$ who
 bhushan  :1           2023-11-29 16:13 (:1)
 
 16.
+
 
 17.
 bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ ls -l
@@ -250,6 +253,8 @@ rajam
 ratnakr
 
 23
+bhushan@bhushan-Nitro-AN515-54:~$  who | grep -vE 'tty2|tty3|tty4'
+bhushan  :1           2023-11-30 16:49 (:1)
 
 24
 bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ ls
@@ -259,8 +264,34 @@ OS-Assignments  demo1.txt  wc.txt
 bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ 
 
 25
+bhushan@bhushan-Nitro-AN515-54:~$ ls -l | grep -E '^-|^d' | wc -l
+9
 
 26
+bhushan@bhushan-Nitro-AN515-54:~$  ls -a | grep "^\."
+.
+..
+.bash_history
+.bash_logout
+.bashrc
+.cache
+.config
+.dotnet
+.eclipse
+.gitconfig
+.gnupg
+.local
+.mysql_history
+.p2
+.pki
+.platformio
+.profile
+.ssh
+.sudo_as_admin_successful
+.swt
+.vscode
+bhushan@bhushan-Nitro-AN515-54:~$ 
+
 
 27
 bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ cat demo1.txt | tr "a-z" "A-Z"
