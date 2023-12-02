@@ -1,0 +1,68 @@
+Assignment No. 04
+
+1.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ wc data.txt
+  6  25 145 data.txt
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ 
+
+2.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ grep "files" data.txt
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ 
+
+3.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ grep "file" data.txt
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ 
+
+4.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ grep -v "file" data.txt
+Linux is open source.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ 
+
+5.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ grep "have" data.txt
+files have permissions.
+files have inode no.
+files have size.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ 
+
+6.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ grep "^f" data.txt
+files have permissions.
+files have inode no.
+files have size.
+
+7.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ grep ".$" data.txt
+Linux is open source.
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+8.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ head -2 data.txt
+Linux is open source.
+In Linux everything is file
+
+9.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ tail -3 data.txt
+files have inode no.
+files have size.
+there are several types of files
+
+10.
+bhushan@bhushan-Nitro-AN515-54:/media/bhushan/Data/Sunbeam_PG-DAC/PG-DAC/OS/Assignments$ head -5 data.txt | tail -3
+files have permissions.
+files have inode no.
+files have size.
+
