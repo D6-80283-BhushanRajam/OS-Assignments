@@ -1,0 +1,195 @@
+1. Write a shell script to display your LOGIN NAME and HOME directory.
+ans: bhushan@bhushan-Nitro-AN515-54:~/SunBeamNotes/OsPractice/Assign05$ bash profile.sh
+Login Name: vaibhav
+Home Directory:  cd /home/bhushan@bhushan-Nitro-AN515-54:~/SunBeamNotes/OsPractice/Assign05$ 
+
+2. Write a shell script to display menu like “1. Date, 2. Cal, 3. Ls, 4. Pwd, 5. Exit” and
+execute the commands depending on user choice.
+ans: 
+
+echo "1. Date" 
+echo "2. Cal" 
+echo "3. Ls" 
+echo "4. PWD" 
+echo "5. Exit"
+echo -n "Enter your choice: " 
+read num
+case $num in
+	1)
+		echo "Date is: "
+		date
+		;;
+	2)
+                echo "Calender is: "
+                cal
+                ;;
+	3)
+		echo "List of files and directories"
+		ls
+		;;
+	4) 
+		echo "Present working Directories"
+		pwd
+		;;
+	5)
+		echo "Exit"
+		exit
+		;;
+	*)
+		echo "Invalid choice"
+		exit
+		;;
+esac	
+output: 
+1. bhushan@bhushan-Nitro-AN515-54:~/SunBeamNotes/OsPractice/Assign05$ bash menu.sh
+1. Date
+2. Cal
+3. Ls
+4. PWD
+5. Exit
+Enter your choice: 1
+Date is: 
+Thursday 30 November 2023 07:29:06 PM IST
+
+2. bhushan@bhushan-Nitro-AN515-54:~/SunBeamNotes/OsPractice/Assign05$ bash menu.sh
+1. Date
+2. Cal
+3. Ls
+4. PWD
+5. Exit
+Enter your choice: 2
+Calender is: 
+   November 2023      
+Su Mo Tu We Th Fr Sa  
+          1  2  3  4  
+ 5  6  7  8  9 10 11  
+12 13 14 15 16 17 18  
+19 20 21 22 23 24 25  
+26 27 28 29 30        
+
+3. bhushan@bhushan-Nitro-AN515-54:~/SunBeamNotes/OsPractice/Assign05$ bash menu.sh
+1. Date
+2. Cal
+3. Ls
+4. PWD
+5. Exit
+Enter your choice: 3
+List of files and directories
+Assign05   demo02.sh  demo04.sh  demo06.sh  demo08.sh  demo10.sh  menu.sh
+demo01.sh  demo03.sh  demo05.sh  demo07.sh  demo09.sh  demo11.sh  profile.sh
+
+4. bhushan@bhushan-Nitro-AN515-54:~/SunBeamNotes/OsPractice/Assign05$ bash menu.sh
+1. Date
+2. Cal
+3. Ls
+4. PWD
+5. Exit
+Enter your choice: 4
+Present working Directories
+/home/bhushan/SunBeamNotes/OsPractice/Assign05
+
+3. Write a shell script to accept the name from the user and check whether user entered
+name is file or directory. If name is file display its size and if it is directory display its
+contents.
+ans: bhushan@bhushan-Nitro-AN515-54:~/SunBeamNotes/OsPractice/Assign05$ bash demo01.sh
+Enter the name of a file or directory: demo02.sh
+demo02.sh is a file.
+Size of demo02.sh: 4.0K
+
+4. Write a shell script to determine whether a given number is prime or not
+ans: bhushan@bhushan-Nitro-AN515-54:~/SunBeamNotes/OsPractice/Assign05$ bash demo02.sh
+Enter a number: 23
+23 is a prime number.
+
+5. Write a Program to find the greatest of three numbers
+ans: bhushan@bhushan-Nitro-AN515-54:~/SunBeamNotes/OsPractice/Assign05$ bash demo03.sh
+Enter the first number: 23
+Enter the second number: 12
+Enter the third number: 45
+45 is the greatest.
+
+6. Write a Program to find whether a given year is a leap year or not
+ans: bhushan@bhushan-Nitro-AN515-54:~/SunBeamNotes/OsPractice/Assign05$ bash demo04.sh
+Enter a year: 2034
+2034 is not a leap year.
+
+7. Write a Program to find whether a given number is positive or negative
+ans: bhushan@bhushan-Nitro-AN515-54:~/SunBeamNotes/OsPractice/Assign05$ bash demo05.sh
+Enter a number: -23
+Invalid input. Please enter a valid number.
+
+
+8. Write a Program to find whether a given number is positive or negative
+ans: bhushan@bhushan-Nitro-AN515-54:~/SunBeamNotes/OsPractice/Assign05$ bash demo06.sh
+Enter a number to print its table: 56
+Table of 56:
+56 x 1 = 56
+56 x 2 = 112
+56 x 3 = 168
+56 x 4 = 224
+56 x 5 = 280
+56 x 6 = 336
+56 x 7 = 392
+56 x 8 = 448
+56 x 9 = 504
+56 x 10 = 560
+
+9. Write a program to find the factorial of given number.
+ans:  bhushan@bhushan-Nitro-AN515-54:~/SunBeamNotes/OsPractice/ShellScript/Day04$ bash factorial.sh
+Enter a number: 
+6
+Factorial= 720
+
+10. Write a program to find given number of terms in the Fibonacci series.
+ans: bhushan@bhushan-Nitro-AN515-54:~/SunBeamNotes/OsPractice/Assign05$ bash demo08.sh
+Enter the number of terms in the Fibonacci series: 7
+Fibonacci series up to 7 terms:
+0 1 1 2 3 5 8 
+
+11. Write a program to calculate gross salary if the DA is 40%, HRA is 20% of basic salary.
+Accept basic salary form user and display gross salary (Result can be floating point
+value).
+ans: bhushan@bhushan-Nitro-AN515-54:~/SunBeamNotes/OsPractice/Assign05$ bash demo09.sh
+Enter the basic salary: 2000
+Gross Salary: 3200.00
+
+
+12. Write a shell script to accept a filename as argument and displays the last modification
+time if the file exists and a suitable message if it doesn’t exist.
+ans: bhushan@bhushan-Nitro-AN515-54:~/SunBeamNotes/OsPractice/Assign05$ bash filename.sh
+File  does not exist.
+
+13. Write a shell script to display only hidden file of current directory.
+ans: bhushan@bhushan-Nitro-AN515-54:~/SunBeamNotes/OsPractice/Assign05$ bash demo11.sh
+No hidden files found in the current directory.
+
+14. Write a shell script to display only executable files of current directory.
+ans: vaibhav@vaibhav-HP-Pavilion-Notebook:~/SunBeamNotes/OsPractice/Assign05$ bash demo12.sh
+No executable files found in the current directory.
+
+15. Accept the two file names from user and append the contents in reverse case of first file
+into second file.
+ans: bhushan@bhushan-Nitro-AN515-54:~/SunBeamNotes/OsPractice/Assign05$ bash demo13.sh
+Enter the first file name: file1.txt
+Enter the second file name: file2.txt
+Contents in reverse case of 'file1.txt' appended to 'file2.txt'.
+
+17. Print the following pattern.
+*
+* *
+* * *
+* * * *
+* * * * *
+ans: bhushan@bhushan-Nitro-AN515-54:~/Practice/OsPractice/Assign05$ vim demo15.sh
+     bhushan@bhushan-Nitro-AN515-54:~/Practice/OsPractice/Assign05$ bash demo15.sh
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+
+
+
+
+
+
